@@ -39,7 +39,7 @@ jobs:
         run: npm ci
 
       - name: Build application
-        run: npm run build
+        run: npm run build -- --base=/nostr-app/
         
       - name: Create 404 page for GitHub Pages
         run: cp dist/index.html dist/404.html
